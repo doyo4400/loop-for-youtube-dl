@@ -14,3 +14,10 @@ If Python3 is present, the script propose to create an http server for shared th
 > https://youtube.com/url2
 > 
 > https://youtube.com/url3
+
+# Get musics from http server
+## Linux
+> wget -r -np -nH -R index.html http://hostname/aaa/bbb/ccc/ddd/
+
+## Windows
+> referer to get_music.ps1

@@ -1,5 +1,6 @@
 # Loop-for-youtube-dl
-simple script to download music from youtube
+simple script to download music from youtube.
+The music is download in mp3 format and create name in format {Title}.{extension}
 
 # Prerequisite
 > sudo apt install youtube-dl -y

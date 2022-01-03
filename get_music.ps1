@@ -15,7 +15,7 @@ $WebResponse.Links | Select-Object -ExpandProperty href -Skip 1 | ForEach-Object
 $Name = -join (180..190|%{[char]$_})
 New-Item -ItemType File -Name $Name
 
-Get-ChildItem -Path "C:\Users\lolow\Downloads" -Filter *.mp3 | Rename-Item -NewName { 
+Get-ChildItem -Path $outputdir -Filter *.mp3 | Rename-Item -NewName { 
     [regex]::Replace(
         $_.Name, 
         '[\xB4-\xBE]',

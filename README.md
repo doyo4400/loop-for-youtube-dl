@@ -6,5 +6,7 @@ simple script to download music from youtube
 
 # format of url.txt : 
 > https://youtube.com/url1
+> 
 > https://youtube.com/url2
+> 
 > https://youtube.com/url3

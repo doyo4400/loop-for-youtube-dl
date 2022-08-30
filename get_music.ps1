@@ -1,4 +1,7 @@
-$outputdir = 'C:\Users\John.Doe\Downloads'
+$myDirectory = [System.IO.Path]::GetDirectoryName($myInvocation.MyCommand.Definition)
+
+
+$outputdir =  $myDirectory + #'C:\Users\John.Doe\Downloads'
 $url       = 'http://your_server/'
 
 $WebResponse = Invoke-WebRequest -Uri $url

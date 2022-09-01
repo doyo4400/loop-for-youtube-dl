@@ -1,5 +1,6 @@
 $myDirectory = [System.IO.Path]::GetDirectoryName($myInvocation.MyCommand.Definition)
 
+New-Item -ItemType "directory" -Path $($Mydirectory + "/musics")
 
 $outputdir =  $myDirectory + #'C:\Users\John.Doe\Downloads'
 $url       = 'http://your_server/'

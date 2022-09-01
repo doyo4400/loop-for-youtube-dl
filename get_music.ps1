@@ -1,9 +1,11 @@
 $myDirectory = [System.IO.Path]::GetDirectoryName($myInvocation.MyCommand.Definition)
 
-New-Item -ItemType "directory" -Path $($Mydirectory + "/musics")
 
-$outputdir =  $myDirectory + #'C:\Users\John.Doe\Downloads'
+$outputdir =  $($Mydirectory + "/musics")
 $url       = 'http://your_server/'
+
+New-Item -ItemType "directory" -Path $outputdir
+
 
 $WebResponse = Invoke-WebRequest -Uri $url
 # get the list of links, skip the first one ("../") and download the files
